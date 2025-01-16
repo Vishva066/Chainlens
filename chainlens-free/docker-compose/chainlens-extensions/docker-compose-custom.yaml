@@ -1,0 +1,12 @@
+services:
+  validator-01:
+    network_mode: host
+    extends:
+      file: ../../blockchain/validator-01/docker-compose.yaml
+      service: validator
+
+  peer-01:
+    network_mode: host
+    extends:
+      file: ../../blockchain/peer-01/docker-compose.yaml
+      service: peer
