@@ -21,3 +21,7 @@ rpc-http-cors-origins=["*"]
 
 # Connections
 rpc-http-max-active-connections=999999999
+
+# Metrics
+metrics-push-enabled=true
+metrics-push-port=9091

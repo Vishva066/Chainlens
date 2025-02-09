@@ -19,3 +19,7 @@ rpc-http-host="127.0.0.1"
 rpc-http-port=9548
 rpc-http-api=["ADMIN", "CLIQUE", "ETH", "NET", "TXPOOL", "WEB3", "DEBUG", "TXPOOL", "TRACE", "PLUGINS"]
 rpc-http-cors-origins=["*"]
+
+# METRICS
+metrics-push-enabled=true
+metrics-push-port=9091

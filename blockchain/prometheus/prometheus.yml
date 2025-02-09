@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'push-gateway'
+    metrics_path: '/metrics'
+    scheme: 'http'
+    static_configs:
+      - targets:
+          - 'localhost:9091' # Replace with your Pushgateway's address
+  - job_name: besu
+    scrape_interval: 15s
+    scrape_timeout: 10s
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets:
+          - localhost:9545
